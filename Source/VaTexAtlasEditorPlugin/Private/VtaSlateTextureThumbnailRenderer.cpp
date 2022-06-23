@@ -58,3 +58,9 @@ void UVtaSlateTextureThumbnailRenderer::Draw(UObject* Object, int32 X, int32 Y, 
 		}
 	}
 }
+
+void UVtaSlateTextureThumbnailRenderer::Draw(UObject* Object, int32 X, int32 Y, uint32 Width, uint32 Height, FRenderTarget* Viewport, FCanvas* Canvas, bool bAdditionalViewFamily)
+{
+	//Super::Draw(Object, X, Y, Width, Height, Viewport, Canvas, bAdditionalViewFamily);
+	this->Draw(Object,X,Y,Width,Height,Viewport,Canvas);
+}
